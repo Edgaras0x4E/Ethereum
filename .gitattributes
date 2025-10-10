@@ -1,0 +1,37 @@
+# Auto normalize line endings
+* text=auto
+
+# PHP files
+*.php text eol=lf diff=php
+
+# JSON, YAML, and config files
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Shell and batch scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Exclude dev files from export
+.gitignore export-ignore
+.gitattributes export-ignore
+.env.example export-ignore
+tests/ export-ignore
+docs/ export-ignore
+
+# Binary files
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+
+# Lock files
+composer.lock lockable
+package-lock.json lockable
+
+# GitHub linguist settings
+build/* linguist-vendored
+vendor/* linguist-vendored
